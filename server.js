@@ -8,7 +8,6 @@ app.set("view engine", "ejs");
 
 const connection = require("./config/db")
 
-
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -158,10 +157,3 @@ app.listen(process.env.PORT || 4000, (error) => {
 
     console.log(`server running on ${process.env.PORT}`);
 });
-
-
-
-
-
-
-
